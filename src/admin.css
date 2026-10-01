@@ -1,0 +1,11 @@
+.admin-root{font:16px/1.5 'Instrument Sans',sans-serif;color:#14213A}
+.admin-root h2,.admin-root h3{font-family:'Bricolage Grotesque',sans-serif;color:#001D44;margin:0 0 12px}
+.admin-root .btn{cursor:pointer}.admin-root .btn:disabled{opacity:.6}.admin-root .btn.sec2{background:transparent;color:#001D44}
+.admin-root .chip{font-size:14px;padding:6px 12px}.admin-root label{display:block;font-weight:600;font-size:14px;margin:12px 0 4px}
+.admin-root input,.admin-root select,.admin-root textarea{width:100%;padding:10px 12px;border:1px solid #cdd8e8;border-radius:10px;font:inherit}.admin-root input[type=checkbox]{width:auto}
+.admin-root table{width:100%;border-collapse:collapse;background:#fff}.admin-root th,.admin-root td{text-align:left;padding:10px;border-bottom:1px solid #e1e8f2;font-size:15px}
+.admin-root .adm{display:grid;grid-template-columns:220px 1fr;min-height:100vh}.admin-root .side{background:#001D44;padding:24px 16px}.admin-root .side a{display:block;color:#dbe6f5;padding:10px 12px;border-radius:8px;text-decoration:none}.admin-root .side a:hover{background:#0A2A5A}
+.admin-root .msg{padding:10px 14px;border-radius:10px;background:#EAF1F8;margin:10px 0}.admin-root .err{background:#fde8e8;color:#8a1f1f}
+.admin-root .arow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.admin-root .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}.admin-root .panel{padding:24px;border-radius:16px;background:#fff;border:1px solid #e1e8f2}
+.admin-root .logo{font:600 22px 'Bricolage Grotesque';color:#fff}.admin-root .logo b{color:#308CA2}
+@media(max-width:820px){.admin-root .adm{grid-template-columns:1fr}}
