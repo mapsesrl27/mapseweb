@@ -21,3 +21,13 @@
 .admin-root .acc{border:1px solid #e1e8f2;border-radius:12px;background:#fff;margin-bottom:12px}.admin-root .acc>button{width:100%;display:flex;justify-content:space-between;padding:16px 18px;background:none;border:0;font:600 17px 'Bricolage Grotesque';color:#001D44;cursor:pointer;text-align:left}.admin-root .accb{padding:0 18px 18px}
 .admin-root .savebar{position:sticky;bottom:0;display:flex;justify-content:flex-end;align-items:center;gap:12px;padding:14px 0;background:linear-gradient(transparent,#f4f7fb 30%)}
 @media(max-width:820px){.admin-root .imgf{grid-template-columns:1fr}}
+
+/* Botones del panel: el panel está fuera de .v, por eso definimos aquí los colores de marca */
+.admin-root{--navy:#001D44;--navy2:#0A2A5A;--blue:#44679B;--teal:#308CA2;--ink1:#1F7186;--ink2:#5B6B85;--ease:cubic-bezier(.2,.7,.2,1);background:#f4f7fb;min-height:100vh}
+.admin-root .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border-radius:10px;border:1.5px solid #001D44;background:#001D44;color:#fff;font:600 15px 'Instrument Sans',sans-serif;text-decoration:none;transition:background .2s,border-color .2s}
+.admin-root .btn:hover:not(:disabled){background:#1F7186;border-color:#1F7186;color:#fff}
+.admin-root .btn.sec2{background:#fff;color:#001D44;border-color:#cdd8e8}.admin-root .btn.sec2:hover:not(:disabled){background:#EAF1F8;color:#001D44;border-color:#9FC3D9}
+.admin-root .chip{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border-radius:99px;border:1.5px solid #cdd8e8;background:#fff;color:#001D44;font:500 14px 'Instrument Sans',sans-serif;cursor:pointer;transition:background .2s,border-color .2s}
+.admin-root .chip:hover{background:#EAF1F8;border-color:#9FC3D9}
+.admin-root button:focus-visible,.admin-root a:focus-visible,.admin-root input:focus-visible,.admin-root select:focus-visible,.admin-root textarea:focus-visible{outline:3px solid #308CA2;outline-offset:2px}
+.admin-root .side{color:#fff}.admin-root table{border-radius:12px;overflow:hidden;border:1px solid #e1e8f2}
