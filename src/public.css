@@ -77,3 +77,13 @@ body{margin:0;background:#fff}.v{--navy:#001D44;--navy2:#0A2A5A;--blue:#44679B;-
 .fw{position:fixed;right:18px;bottom:18px;z-index:12;background:#1F7186;color:#fff!important;border-radius:99px;padding:13px 20px;font-weight:600;box-shadow:0 10px 30px rgba(0,29,68,.3);opacity:0;pointer-events:none;transition:.3s}.fw.on{opacity:1;pointer-events:auto}
 .v a:focus-visible,.v button:focus-visible{outline:3px solid #308CA2;outline-offset:2px}
 @media(max-width:900px){.bg{display:block}}
+
+/* Logo de imagen (autoadministrable) */
+.lg img{width:34px;height:34px;object-fit:contain;background:#fff;border-radius:9px;padding:3px;box-shadow:0 0 0 1px rgba(48,140,162,.35);flex:none}
+.ft .lg{margin-bottom:6px}
+/* Testimonios */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}.tq{margin:0;padding-top:28px;border-top:1px solid #cfdaea;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.tq blockquote{margin:0;font:500 21px/1.45 'Bricolage Grotesque';color:var(--navy);letter-spacing:-.01em}
+.tq figcaption{display:flex;align-items:center;gap:12px}.tq figcaption img,.tq figcaption>span{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:none}
+.tq figcaption>span{display:grid;place-items:center;background:var(--ice);color:var(--ink1);font:600 18px 'Bricolage Grotesque'}.tq b{display:block;color:var(--navy);font-size:16px}.tq small{color:var(--ink2);font-size:14px}
+@media(max-width:900px){.tg{grid-template-columns:1fr;gap:32px}}

@@ -1,7 +1,8 @@
 import { useEffect, useState, ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { wa } from './lib/supabase'
-export const Logo = () => <span className="lg"><svg width="32" height="32" viewBox="0 0 34 34" aria-hidden><rect width="34" height="34" rx="9" fill="#001D44" stroke="#308CA2" /><path d="M7 26V10l10 10 10-10v16" fill="none" stroke="#fff" strokeWidth="3" strokeLinejoin="round" /><circle cx="17" cy="8" r="2.6" fill="#308CA2" /></svg>MAPSE</span>
+import { cfg } from './lib/settings'
+export const Logo = () => <span className="lg"><img src={cfg('logo_url')} alt="" width={34} height={34} />{cfg('site_name')}</span>
 export function Seo({ t, d }: { t: string; d?: string }) { useEffect(() => { document.title = t + ' | MAPSE'; if (d) document.querySelector('meta[name=description]')?.setAttribute('content', d) }, [t, d]); return null }
 export const Photo = ({ src, alt, pos = '50% 50%', h, children }: { src: string; alt: string; pos?: string; h?: number; children?: ReactNode }) =>
   <div className="ph3" style={{ height: h }}><img src={src} alt={alt} style={{ objectPosition: pos }} loading="lazy" />{children}</div>
